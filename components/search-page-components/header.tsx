@@ -1,0 +1,44 @@
+import { StyleSheet, Text, View, Image } from 'react-native'
+import React from 'react'
+import Feather from '@expo/vector-icons/Feather';
+
+const Header = () => {
+  return (
+    <View style={styles.container}>
+      <View style={{ flex: 1, flexDirection: "row", alignItems: 'center'}}>
+        <Image source={require("@/assets/images/profile-pic.jpg")} style={styles.profilePic}/>
+        <Text style={styles.headerText}>Search</Text>
+      </View>
+      <View style={{ flex: 1/8 }}>
+        <Feather name="camera" size={24} color="white" style={{}} />
+      </View>
+    </View>
+  )
+}
+
+export default Header
+
+const styles = StyleSheet.create({
+
+  container: {
+    width: "100%", 
+    height: 60, 
+    flexDirection: "row", 
+    alignItems: 'center'
+  },
+
+  profilePic: {
+    width: 38,
+    height: 38,
+    borderRadius: 38
+  },
+
+  headerText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 25,
+    marginLeft: 12
+  },
+
+
+})

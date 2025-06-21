@@ -1,45 +1,42 @@
+import Feather from '@expo/vector-icons/Feather';
+import Octicons from '@expo/vector-icons/Octicons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+const Layout = () => {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
-        }}
-      />
+    <Tabs 
+    screenOptions={{
+        tabBarStyle: {backgroundColor: "#000", height: 60, paddingBottom: 10},
+        tabBarActiveTintColor: 'white',
+        tabBarInactiveTintColor: "#8e8e8e",
+        headerShown: false
+    }}
+    >
+    <Tabs.Screen
+    name="index"
+    options={{
+        title: "Home",
+        tabBarIcon: ({color, focused}) => (<Octicons name="home" size={24} color={focused ? color : "#8e8e8e"} />)
+    }}
+    />
+    <Tabs.Screen
+    name="search-page"
+    options={{
+        title: "Search",
+        tabBarIcon: ({color, focused}) => (<Feather name="search" size={24} color={focused ? color : "#8e8e8e"} />)
+    }}
+    />
+    <Tabs.Screen
+    name="library-page"
+    options={{
+        title: "Your Library",
+        tabBarIcon: ({color, focused}) => (<Ionicons name="library-outline" size={24} color={focused ? color : "#8e8e8e"} />)
+    }}
+    />
     </Tabs>
-  );
+  )
 }
+
+export default Layout
