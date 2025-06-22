@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 
-import Header from '@/components/search-page-components/header'
-import SearchBar from '@/components/search-page-components/searchBar'
 import BrowseCard from '@/components/search-page-components/browseCard'
 import DiscoverCard from '@/components/search-page-components/discoverCard'
-import MusicBar from '@/components/musicBar'
+import Header from '@/components/search-page-components/header'
+import MusicBar from '@/components/search-page-components/musicBar'
+import SearchBar from '@/components/search-page-components/searchBar'
 
 // Mock Data for BrowseCard
 const browseCards = [

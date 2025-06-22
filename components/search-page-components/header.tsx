@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
   },
 
   profilePic: {
-    width: 38,
-    height: 38,
-    borderRadius: 38
+    width: 34,
+    height: 34,
+    borderRadius: 34,
   },
 
   headerText: {
