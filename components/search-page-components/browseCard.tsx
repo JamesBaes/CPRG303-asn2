@@ -10,7 +10,7 @@ type BrowseCardProps = {
 
 const BrowseCard = ({genre, image, color}: BrowseCardProps) => {
   return (
-    <View style={{width: 172, height: 62, backgroundColor: color, borderRadius: 4, flexDirection: 'row', overflow: "hidden"}}>
+    <View style={{width: 167, height: 62, backgroundColor: color, borderRadius: 4, flexDirection: 'row', overflow: "hidden"}}>
         <Text style={styles.genre}>{genre}</Text>
           <Image style={styles.image} source={{uri: image}} />
     </View>

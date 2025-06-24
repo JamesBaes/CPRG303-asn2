@@ -22,7 +22,7 @@ export default SmallPlaylistCard
 const styles = StyleSheet.create({
 
     container: {
-        width: 176,
+        width: 170,
         height: 60,
         backgroundColor: "#29292a",
         borderRadius: 4,
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
         marginLeft: 8,
         fontSize: 13,
         fontWeight: "500",     
-        color: "white"
+        color: "white",
+        flexShrink: 1
     }
 })

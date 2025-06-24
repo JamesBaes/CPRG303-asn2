@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import BrowseCard from '@/components/search-page-components/browseCard'
 import DiscoverCard from '@/components/search-page-components/discoverCard'
 import Header from '@/components/search-page-components/header'
-import MusicBar from '@/components/search-page-components/musicBar'
+import MusicBar from '@/components/musicBar'
 import SearchBar from '@/components/search-page-components/searchBar'
 
 // Mock Data for BrowseCard
@@ -58,7 +58,7 @@ const discoverCards = [
 
 const SearchPage = () => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: "#000", padding: 15 }}>
+    <SafeAreaView style={{flex: 1, backgroundColor: "#000", padding: 20 }}>
 
         <Header />
 
@@ -115,8 +115,10 @@ const SearchPage = () => {
           </View>
         </View>      
 
-        <MusicBar />
-
+        <View style={styles.musicBar}>
+          <MusicBar />
+        </View>
+      
     </SafeAreaView>
   )
 }
@@ -170,9 +172,11 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
 
-  browseAllSectionContainer: {
-
+  musicBar: {
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    bottom: 0,
   }
-
 
 })

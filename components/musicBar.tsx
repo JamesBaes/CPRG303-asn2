@@ -15,13 +15,13 @@ const MusicBar = () => {
         
         <View style={{flexDirection: "row", gap: 8}}>
             <Image style={styles.image} source={{uri: "https://upload.wikimedia.org/wikipedia/en/d/dc/Clairo_-_Charm.png"}} />
-            <View>
+            <View style={{justifyContent: 'center'}}>
                 <Text style={{fontSize: 13, fontWeight: "400", color: 'white'}}>Terrapin</Text>
                 <Text style={{fontSize: 12, fontWeight: 'bold', color: '#a9a9a9'}}>Clairo</Text>
             </View>
         </View>
 
-        <View style={{flexDirection: "row", gap: 24, marginLeft: 196}}>
+        <View style={{flexDirection: "row", gap: 24, marginLeft: 186}}>
             <MaterialCommunityIcons name="monitor-speaker" size={22} color="white" />
             <FontAwesome5 name="play" size={18} color="white" />  
         </View>
@@ -39,9 +39,8 @@ const styles = StyleSheet.create({
         height: 55,
         borderRadius: 8,
         marginLeft: -9,
-        marginTop: 57,
         flexDirection: "row",
-        alignItems: "center",
+        alignItems: "center"
     },
 
     image: {

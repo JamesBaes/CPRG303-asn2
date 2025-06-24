@@ -1,7 +1,5 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
-import { Background } from '@react-navigation/elements'
-
 
 // Mock Data for Filter Buttons
 const filterButtons = ["All", "Music", "Podcasts", "Audiobooks"]
@@ -14,11 +12,11 @@ const Header = () => {
           // renders the filter buttons and uses conditional rendering so the first button ("all") is green
           filterButtons.map((button, index) => index === 0 ? (
             
-            <View style={[styles.filterButton, {backgroundColor: "#1db954"}]}>
+            <View key={index} style={[styles.filterButton, {backgroundColor: "#1db954"}]}>
               <Text style={styles.buttonText}>{button}</Text>
             </View>
           ) : (
-            <View style={styles.filterButton}>
+            <View key={index} style={styles.filterButton}>
               <Text style={styles.buttonText}>{button}</Text>
             </View>
           )
@@ -33,10 +31,9 @@ export default Header
 const styles = StyleSheet.create({
 
   container: {
-    width: "100%", 
-    height: 60, 
     flexDirection: "row", 
     alignItems: 'center',
+    marginBottom: 20,
     gap: 9
   },
 
@@ -54,18 +51,18 @@ const styles = StyleSheet.create({
   },
 
   filterButton: {
-     borderRadius: 20, 
-     justifyContent:"center", 
-     paddingVertical: 4, 
-     paddingHorizontal: 14, 
-     height: 30, 
-     backgroundColor: "#29292a"
+    borderRadius: 20, 
+    justifyContent:"center", 
+    paddingVertical: 4, 
+    paddingHorizontal: 14, 
+    height: 30, 
+    backgroundColor: "#29292a"
   },
 
   buttonText: {
     color: "white",
     fontWeight: "500",
-    fontSize: 13
+    fontSize: 12.5
   }
 
 })

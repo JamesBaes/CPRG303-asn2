@@ -21,10 +21,9 @@ export default Header
 const styles = StyleSheet.create({
 
   container: {
-    width: "100%", 
-    height: 60, 
     flexDirection: "row", 
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 15
   },
 
   profilePic: {

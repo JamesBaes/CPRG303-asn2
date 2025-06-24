@@ -1,8 +1,8 @@
 import BigPlaylistCard from '@/components/home-page-components/bigPlaylistCard'
 import Header from '@/components/home-page-components/header'
 import SmallPlaylistCard from '@/components/home-page-components/smallPlaylistCard'
-import MusicBar from '@/components/home-page-components/musicBar'
 import React from 'react'
+import MusicBar from '@/components/musicBar'
 import { FlatList, StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from "react-native-safe-area-context"
 
@@ -61,7 +61,7 @@ const playlistCards = [
 
 const HomePage = () => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: "#000", padding: 15}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: "#000", padding: 20}}>
 
       <Header />
 
@@ -106,7 +106,7 @@ const HomePage = () => {
       </View>
 
         {/* Recents Section */}
-      <View style={{ flexDirection: "row", alignItems: 'center', gap: 222, marginTop: 20}}>
+      <View style={{ flexDirection: "row", alignItems: 'center', gap: 217, marginTop: 20}}>
         <Text style={{ fontSize: 22, color: "white", fontWeight: "bold" }}>
           Recents
         </Text>
@@ -114,8 +114,9 @@ const HomePage = () => {
           Show all
         </Text>
       </View>
-
-      <MusicBar />
+      <View style={styles.musicBar}>
+        <MusicBar />
+      </View>
       
     </SafeAreaView>
   )
@@ -146,4 +147,10 @@ const styles = StyleSheet.create({
     gap: 8
   },
 
+  musicBar: {
+    position: 'absolute',
+    left: 20,
+    right: 20,
+    bottom: 0,
+  }
 })
