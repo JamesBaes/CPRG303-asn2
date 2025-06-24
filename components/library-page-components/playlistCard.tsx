@@ -20,9 +20,9 @@ const PlaylistCard = ({ title, category, image, owner, isPinned, isDownloaded }:
         <Image source={{ uri: image }} style={styles.image} />
         <View>
             <Text numberOfLines={2} style={styles.titleText}>{title}</Text>
-            <View style={{ flexDirection: "row", gap: 4, marginLeft: 8, alignItems:"center" }}>
-                {isDownloaded && <MaterialIcons name="download-for-offline" size={14} color="#1DB954" />}
+            <View style={{ flexDirection: "row", gap: 4, marginLeft: 8, alignItems:"center", marginTop: 3}}>
                 {isPinned && <SimpleLineIcons name="pin" size={14} color="#1DB954" />}
+                {isDownloaded && <MaterialIcons name="download-for-offline" size={14} color="#1DB954" />}
                 <Text style={styles.subText}>{category} • {owner}</Text>
             </View>
         </View>
@@ -35,16 +35,17 @@ export default PlaylistCard
 const styles = StyleSheet.create({
     container: {
         width: "100%",
-        height: 75,
+        height: 70,
         backgroundColor: "black",
         borderRadius: 4,
         flexDirection: "row",
         alignItems: "center",
+        gap: 2
     },
     
     image: {
-        width: 75,
-        height: 75
+        width: 70,
+        height: 70
     },
 
     titleText: {
@@ -57,6 +58,6 @@ const styles = StyleSheet.create({
     subText: {
         color: "gray",
         fontWeight: "500",
-        fontSize: 13
+        fontSize: 13.5
     }
 })

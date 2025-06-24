@@ -15,25 +15,25 @@ const browseCards = [
     id: 1,
     genre: 'Music',
     image: 'https://wallpapersok.com/images/hd/minimalist-abstract-art-in-pastel-colors-x4jv8i1uwtbmcybw.jpg',
-    color: '#FF13F0'
+    color: '#C11C84'
   },
   {
     id: 2,
     genre: 'Podcasts',
-    image: 'https://wallpapersok.com/images/hd/minimalist-abstract-art-in-pastel-colors-x4jv8i1uwtbmcybw.jpg',
-    color: '#FF13F0'
+    image: 'https://thevirtualinstructor.com/blog/wp-content/uploads/2013/08/understanding-abstract-art.jpg',
+    color: '#097969'
   },
   {
     id: 3,
     genre: 'Audiobooks',
-    image: 'https://wallpapersok.com/images/hd/minimalist-abstract-art-in-pastel-colors-x4jv8i1uwtbmcybw.jpg',
-    color: '#FF13F0'
+    image: 'https://images.pexels.com/photos/8725223/pexels-photo-8725223.jpeg',
+    color: '#254ca2'
   },
   {
     id: 4,
     genre: 'Live Events',
-    image: 'https://wallpapersok.com/images/hd/minimalist-abstract-art-in-pastel-colors-x4jv8i1uwtbmcybw.jpg',
-    color: '#FF13F0'
+    image: 'https://t4.ftcdn.net/jpg/08/25/21/97/360_F_825219783_NTnXArJFuF55ku715dHZKPYIXvitELho.jpg',
+    color: '#800080'
   },
 ]
 
@@ -46,13 +46,13 @@ const discoverCards = [
   },
   {
     id: 2,
-    title: "Music for you",
-    image: "https://images.squarespace-cdn.com/content/v1/5f7e2a6c122e8851be82f848/d436d69f-447e-47fd-84f7-20e855da1d12/20230812_060059196_iOS.jpg"
+    title: "#k-indie",
+    image: "https://billboardphilippines.com/wp-content/uploads/2025/03/wave-to-earth-manila--1600x838.jpg"
   },
   {
     id: 3,
-    title: "Music for you",
-    image: "https://images.squarespace-cdn.com/content/v1/5f7e2a6c122e8851be82f848/d436d69f-447e-47fd-84f7-20e855da1d12/20230812_060059196_iOS.jpg"
+    title: "#downtown vibes",
+    image: "https://i.ytimg.com/vi/h3gwRr_54cE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBbFDHOnlkLBCZEzmfsFAceNU8KSw"
   }
 ]
 

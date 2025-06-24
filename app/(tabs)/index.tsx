@@ -10,53 +10,52 @@ import { SafeAreaView } from "react-native-safe-area-context"
 const playlistCards = [
   {
     id: 1,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Apricot Princess",
+    image: "https://i.scdn.co/image/ab67616d0000b2731bd6d088d3d81972af4cb81d",
+    artist: "Rex Orange County",
   },
   {
     id: 2,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Kisses and Kills",
+    image: "https://i.scdn.co/image/ab67616d0000b273d1d8c6f08fd3cba8ca6fe863",
+    artist: "THE ORAL CIGARETTES",
   },
   {
     id: 3,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "0.1 flaws and all",
+    image: "https://i.scdn.co/image/ab67616d0000b273c21555708975ad94b1faf422",
+    artist: "wave to earth",
   },
   {
     id: 4,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Soy Pablo",
+    image: "https://m.media-amazon.com/images/I/51NtTftxs9L._UF1000,1000_QL80_.jpg",
+    artist: "Boy Pablo",
   },
   {
     id: 5,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Grow",
+    image: "https://upload.wikimedia.org/wikipedia/en/2/24/Chon_Grow_artwork.jpg",
+    artist: "artisthon",
   },
   {
     id: 6,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Being So Normal",
+    image: "https://m.media-amazon.com/images/I/71+RCfHRykL._UF1000,1000_QL80_.jpg",
+    artist: "Peach Pit",
   },
   {
     id: 7,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
+    title: "Give Me A Minute",
+    image: "https://i.scdn.co/image/ab67616d0000b2736c1ff9424f275a8af7c72551",
+    artist: "Lizzy McAlpine",
   },
   {
     id: 8,
-    title: "This Is How Tomorrow Moves",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Beabadoobee_-_This_Is_How_Tomorrow_Moves.png/250px-Beabadoobee_-_This_Is_How_Tomorrow_Moves.png",
-    artist: "beabadoobee"
-  },
-  
+    title: "In The End It Always Does",
+    image: "https://media.pitchfork.com/photos/64932b30e7a8aa8db8026ea6/master/w_1280%2Cc_limit/The%2520Japanese%2520House-%2520In%2520the%2520End%2520It%2520Always%2520Does%2520.jpeg",
+    artist: "The Japanese House"
+  },  
 ]
 
 const HomePage = () => {

@@ -16,8 +16,8 @@ const MusicBar = () => {
         <View style={{flexDirection: "row", gap: 8}}>
             <Image style={styles.image} source={{uri: "https://upload.wikimedia.org/wikipedia/en/d/dc/Clairo_-_Charm.png"}} />
             <View style={{justifyContent: 'center'}}>
-                <Text style={{fontSize: 13, fontWeight: "400", color: 'white'}}>Terrapin</Text>
-                <Text style={{fontSize: 12, fontWeight: 'bold', color: '#a9a9a9'}}>Clairo</Text>
+                <Text style={{fontSize: 13, fontWeight: "500", color: 'white'}}>Terrapin</Text>
+                <Text style={{fontSize: 12, fontWeight: '500', color: '#a9a9a9'}}>Clairo</Text>
             </View>
         </View>
 
